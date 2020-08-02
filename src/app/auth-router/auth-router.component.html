@@ -1,0 +1,21 @@
+<div fxLayout="column" fxLayoutAlign="center center">
+  <div [ngStyle.xs]="{'width.%': 70}" [ngStyle.gt-md]="{'width.%': 40}">
+    <form>
+      <mat-form-field class="full-width">
+        <mat-label>Username</mat-label>
+        <input type="text" matInput required />
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <mat-label>Password</mat-label>
+        <input type="password" matInput required />
+      </mat-form-field>
+      <mat-checkbox>Remember me?</mat-checkbox>
+    </form>
+    <button mat-raised-button color="primary" class="full-width">Login</button>
+  </div>
+
+  <div [ngStyle.xs]="{'width.%': 70}" [ngStyle.gt-md]="{'width.%': 40}" fxLayoutGap="7px">
+    <button mat-raised-button color="primary" class="full-width">Login with Google</button>
+    <button mat-raised-button color="primary" class="full-width">Login with Facebook</button>
+  </div>
+</div>
